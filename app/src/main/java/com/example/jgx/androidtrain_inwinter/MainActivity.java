@@ -1,14 +1,21 @@
 package com.example.jgx.androidtrain_inwinter;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity  {
 
-    @Override
+    private int contentView;
+
+
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        //super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setContentView(new Myview(this));
+        //setContentView(new Myview(this));
+    }
+
+
+    public void setContentView(int contentView) {
+        this.contentView = contentView;
     }
 }
